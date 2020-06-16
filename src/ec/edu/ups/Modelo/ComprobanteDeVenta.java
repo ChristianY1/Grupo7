@@ -25,7 +25,5 @@ public class ComprobanteDeVenta {
 	}
 	public void setNumero(int numero) {
 		this.numero = numero;
-	}
-	
-	
+	}	
 }
