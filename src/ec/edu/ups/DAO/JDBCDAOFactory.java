@@ -1,12 +1,17 @@
 package ec.edu.ups.DAO;
 
+import ec.edu.ups.mysql.jdbc.JDBCCertificadoMedicoDAO;
+import ec.edu.ups.mysql.jdbc.JDBCCitaDAO;
+import ec.edu.ups.mysql.jdbc.JDBCConsultaMedicaDAO;
+import ec.edu.ups.mysql.jdbc.JDBCPacienteDAO;
+
 public class JDBCDAOFactory extends DAOFactory{
 
 	
 	@Override
 	public PacienteDAO getPacienteDAO() {
 		// TODO Auto-generated method stub
-		return new JDBPacienteDAO();
+		return new JDBCPacienteDAO();
 	}
 
 	@Override
