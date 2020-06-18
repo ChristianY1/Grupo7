@@ -31,5 +31,4 @@ public class ComprobanteDeVenta {
 		return "ComprobanteDeVenta [tipo=" + tipo + ", fecha=" + fecha + ", numero=" + numero + "]";
 	}	
 	
-	
 }

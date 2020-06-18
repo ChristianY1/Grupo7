@@ -1,7 +1,7 @@
 package ec.edu.ups.mysql.jdbc;
 
-import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -27,7 +27,8 @@ public class ContextJDBC {
 	private static final String URL = "jdbc:mysql://localhost:3306/jee";
 	private static final String USER = "root";
 	private static final String PASS = "gleon.123@";
-	private static ContextJDBC jdbc = null;	
+	private static ContextJDBC jdbc = null;
+	private static ContextJDBC jdbc2 = null;
 	private Statement statement = null;
 
 	public ContextJDBC() {
@@ -81,13 +82,7 @@ public class ContextJDBC {
 		}
 	}
 
-	/**
-	 * Método getJDBC.
-	 * 
-	 * Obtiene una conexión activa a la base de datos
-	 * 
-	 * @return jdbc
-	 */
+
 	protected static ContextJDBC getJDBC1() {
 		// creación de la conexión a la base de datos solo si no ha sido creada patrón
 		// de diseño singleton
@@ -95,6 +90,15 @@ public class ContextJDBC {
 			jdbc = new ContextJDBC();
 		}
 		return jdbc;
+
+	}
+	
+	protected static ContextJDBC getJDBC2() {
+		
+		if (jdbc2 == null) {
+			jdbc2 = new ContextJDBC();
+		}
+		return jdbc2;
 
 	}
 
