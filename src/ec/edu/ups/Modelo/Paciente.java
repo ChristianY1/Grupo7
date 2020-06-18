@@ -1,5 +1,7 @@
 package ec.edu.ups.Modelo;
 
+import java.util.ArrayList;
+
 import ec.edu.ups.Modelo.Usuario;
 
 public class Paciente extends Usuario{
@@ -11,6 +13,7 @@ public class Paciente extends Usuario{
 	private String cedula;
 	private String email;
 	private String contrasena;
+	private ArrayList<Cita> citasList;
 	
 	
 	
@@ -18,7 +21,9 @@ public class Paciente extends Usuario{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	
+	//Primera instancia, creacion usuario sin cita
 	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
 			String contrasena) {
 		super();
@@ -32,79 +37,121 @@ public class Paciente extends Usuario{
 		this.contrasena = contrasena;
 	}
 
+	
+	//Agregar una cita al paciente
+	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
+			String contrasena, ArrayList<Cita> citasList) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.sexo = sexo;
+		this.telefono = telefono;
+		this.cedula = cedula;
+		this.email = email;
+		this.contrasena = contrasena;
+		this.citasList = citasList;
+	}
+
+
 	public String getNombre() {
 		return nombre;
 	}
+
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+
 	public String getApellido() {
 		return apellido;
 	}
+
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
 
+
 	public int getEdad() {
 		return edad;
 	}
+
 
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
 
+
 	public String getSexo() {
 		return sexo;
 	}
+
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 
+
 	public String getTelefono() {
 		return telefono;
 	}
+
 
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
+
 	public String getCedula() {
 		return cedula;
 	}
+
 
 	public void setCedula(String cedula) {
 		this.cedula = cedula;
 	}
 
+
 	public String getEmail() {
 		return email;
 	}
+
 
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+
 	public String getContrasena() {
 		return contrasena;
 	}
+
 
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
 	}
 
+
+	public ArrayList<Cita> getCitasList() {
+		return citasList;
+	}
+
+
+	public void setCitasList(ArrayList<Cita> citasList) {
+		this.citasList = citasList;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Paciente [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sexo=" + sexo
 				+ ", telefono=" + telefono + ", cedula=" + cedula + ", email=" + email + ", contrasena=" + contrasena
-				+ "]";
+				+ ", citasList=" + citasList + "]";
 	}
 	
 	
-	
-	
+
 	
 }
