@@ -15,11 +15,11 @@ public class ControladorCaja {
 		return 0;
 	}
 	
-	public double calcularDebe() {
+	public double calcularDebe(double ganancia) {
 		return 0;
 	}
 	
-	public double haber() {
+	public double haber(double deudas) {
 		return 0;
 	}
 	

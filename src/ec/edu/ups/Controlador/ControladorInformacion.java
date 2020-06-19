@@ -4,6 +4,7 @@ import java.util.List;
 
 import ec.edu.ups.Modelo.Colaboradores;
 import ec.edu.ups.Modelo.Medico;
+import ec.edu.ups.Modelo.Usuario;
 
 public class ControladorInformacion {
 	private Colaboradores colaboradores;
@@ -18,7 +19,7 @@ public class ControladorInformacion {
 		return null;
 	}
 
-	public void verificarRol() {
-		
+	public boolean verificarRol(Usuario rol) {
+		return null != null;
 	}
 }
