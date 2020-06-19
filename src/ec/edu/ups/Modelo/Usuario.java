@@ -1,6 +1,6 @@
 package ec.edu.ups.Modelo;
 
-public  class Usuario {
+public class Usuario {
 	
 	public boolean validarCorreo(String correo) {
 		return true;
