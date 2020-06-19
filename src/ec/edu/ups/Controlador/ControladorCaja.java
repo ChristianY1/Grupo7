@@ -1,5 +1,9 @@
 package ec.edu.ups.Controlador;
 
+import java.util.List;
+
+import org.junit.internal.builders.NullBuilder;
+
 import ec.edu.ups.Modelo.Caja;
 import ec.edu.ups.Modelo.Colaboradores;
 import ec.edu.ups.Modelo.ComprobanteDeVenta;
@@ -11,7 +15,7 @@ public class ControladorCaja {
 	
 	
 	
-	public double crearTransaccionSueldo(double p1, Colaboradores p2, int p3) {
+	public double crearTransaccionSueldo(double p1, String p2, int p3) {
 		return 0;
 	}
 	
@@ -23,15 +27,15 @@ public class ControladorCaja {
 		return 0;
 	}
 	
-	public void guardarTransaccion() {
-		
+	public boolean guardarTransaccion() {
+		return false;
 	}
 	
-	public void registrarComprobante(ComprobanteDeVenta cdv) {
-		
+	public List<ComprobanteDeVenta> registrarComprobante(ComprobanteDeVenta cdv) {
+		return null;
 	}
 	
-	public double actualizarSaldo() {
+	public double actualizarSaldo(double debe, double haber) {
 		return 0;
 	}
 

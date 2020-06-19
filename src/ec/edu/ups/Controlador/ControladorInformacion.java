@@ -19,7 +19,5 @@ public class ControladorInformacion {
 		return null;
 	}
 
-	public boolean verificarRol(Usuario rol) {
-		return null != null;
-	}
+	
 }

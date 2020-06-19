@@ -4,15 +4,13 @@ import ec.edu.ups.Modelo.Medico;
 
 public class ControladorMedico {
 
-	public double calcularSueldo(Medico especialidad) {
+	public double calcularSueldo(String especialidad) {
 		return 0;
 	}
 	
-	public boolean verificarEspecialidad(Medico especialidad) {
-		return null != null;
+	public boolean verificarEspecialidad(int id) {
+		return false;
 	}
 	
-	public int cargasFamiliares(Medico id) {
-		return 0;
-	}
+	
 }
