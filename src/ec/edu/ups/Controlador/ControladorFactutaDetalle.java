@@ -2,36 +2,27 @@ package ec.edu.ups.Controlador;
 
 import java.util.List;
 
+import ec.edu.ups.Modelo.Factura;
+import ec.edu.ups.Modelo.FacturaDetalle;
+
 
 public class ControladorFactutaDetalle {
 	
-	private Caja caja;
+	Factura factura;
+	FacturaDetalle facturaDetalle;
 	
 	
-	
-	
-	public double crearTransaccionSueldo(double p1, String p2, int p3) {
-		return 0;
+	public boolean calcularTotalPagarEnMedicina(double totalPagarMedicina) {
+		return true;
 	}
 	
-	public double calcularDebe(double ganancia) {
-		return 0;
+	
+	public boolean verificarIVA(double iva) {
+		return true;
 	}
 	
-	public double haber(double deudas) {
-		return 0;
-	}
 	
-	public boolean guardarTransaccion() {
-		return false;
+	public boolean consultarMetodoPago(String metodo) {
+		return true;
 	}
-	
-	public List<ComprobanteDeVenta> registrarComprobante(ComprobanteDeVenta cdv) {
-		return null;
-	}
-	
-	public double actualizarSaldo(double debe, double haber) {
-		return 0;
-	}
-
 }
