@@ -7,13 +7,13 @@ public class LibroDiario {
 	private int libroD_id;
 	private String debe;
 	private String haber;
-	private Date fecha;
+	private String fecha;
 	
 	public LibroDiario() {
 		super();
 	}
 	
-	public LibroDiario(int libroD_id, String debe, String haber, Date fecha) {
+	public LibroDiario(int libroD_id, String debe, String haber, String fecha) {
 		super();
 		this.libroD_id = libroD_id;
 		this.debe = debe;
@@ -45,11 +45,11 @@ public class LibroDiario {
 		this.haber = haber;
 	}
 
-	public Date getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 

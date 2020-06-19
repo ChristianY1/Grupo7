@@ -5,7 +5,7 @@ import java.sql.Date;
 public class HistoriasClinicas {
 
 	private int historia_id;
-	private Date fecha;
+	private String fecha;
 	private String historia;
 	private String observaciones;
 	
@@ -13,7 +13,7 @@ public class HistoriasClinicas {
 		super();
 	}
 	
-	public HistoriasClinicas(int historia_id, Date fecha, String historia, String observaciones) {
+	public HistoriasClinicas(int historia_id, String fecha, String historia, String observaciones) {
 		super();
 		this.historia_id = historia_id;
 		this.fecha = fecha;
@@ -29,11 +29,11 @@ public class HistoriasClinicas {
 		this.historia_id = historia_id;
 	}
 
-	public Date getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 
