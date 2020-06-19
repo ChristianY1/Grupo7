@@ -3,9 +3,10 @@ package ec.edu.ups.Modelo;
 import java.util.List;
 
 public class Informacion {
+	
 	private List<Colaboradores> listaColaboradores;
 	private List<Medico> listaMedicos;
-	
+	private List<Paciente> listaPacientes;
 	
 	
 	public Informacion() {
@@ -13,10 +14,11 @@ public class Informacion {
 	}
 
 
-	public Informacion(List<Colaboradores> listaColaboradores, List<Medico> listaMedicos) {
+	public Informacion(List<Colaboradores> listaColaboradores, List<Medico> listaMedicos, List<Paciente> listaPacientes) {
 		super();
 		this.listaColaboradores = listaColaboradores;
 		this.listaMedicos = listaMedicos;
+		this.listaPacientes = listaPacientes;
 	}
 
 
@@ -38,8 +40,16 @@ public class Informacion {
 	public void setListaMedicos(List<Medico> listaMedicos) {
 		this.listaMedicos = listaMedicos;
 	}
-	
-	
+
+
+	public List<Paciente> getListaPacientes() {
+		return listaPacientes;
+	}
+
+
+	public void setListaPacientes(List<Paciente> listaPacientes) {
+		this.listaPacientes = listaPacientes;
+	}
 	
 	
 }

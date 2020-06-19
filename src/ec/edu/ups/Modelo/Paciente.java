@@ -1,6 +1,7 @@
 package ec.edu.ups.Modelo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import ec.edu.ups.Modelo.Usuario;
 
@@ -14,7 +15,7 @@ public class Paciente extends Usuario{
 	private String email;
 	private String contrasena;
 	private ArrayList<Cita> citasList;
-	
+	private List<HistoriasClinicas> historiasClinicas;
 	
 	
 	public Paciente() {
@@ -51,6 +52,22 @@ public class Paciente extends Usuario{
 		this.email = email;
 		this.contrasena = contrasena;
 		this.citasList = citasList;
+	}
+	
+	//Agregar historias clinicas
+	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
+			String contrasena, ArrayList<Cita> citasList, List<HistoriasClinicas> historiasClinicas) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.sexo = sexo;
+		this.telefono = telefono;
+		this.cedula = cedula;
+		this.email = email;
+		this.contrasena = contrasena;
+		this.citasList = citasList;
+		this.historiasClinicas = historiasClinicas;
 	}
 
 
@@ -143,15 +160,21 @@ public class Paciente extends Usuario{
 		this.citasList = citasList;
 	}
 
+	public List<HistoriasClinicas> getHistoriasClinicas() {
+		return historiasClinicas;
+	}
+
+
+	public void setHistoriasClinicas(List<HistoriasClinicas> historiasClinicas) {
+		this.historiasClinicas = historiasClinicas;
+	}
+
 
 	@Override
 	public String toString() {
 		return "Paciente [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sexo=" + sexo
 				+ ", telefono=" + telefono + ", cedula=" + cedula + ", email=" + email + ", contrasena=" + contrasena
-				+ ", citasList=" + citasList + "]";
+				+ ", citasList=" + citasList + ", historiasClinicas=" + historiasClinicas + "]";
 	}
-	
-	
 
-	
 }
