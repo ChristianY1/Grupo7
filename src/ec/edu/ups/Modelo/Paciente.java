@@ -14,17 +14,16 @@ public class Paciente extends Usuario{
 	private String cedula;
 	private String email;
 	private String contrasena;
-	private ArrayList<Cita> citasList;
-	private List<HistoriasClinicas> historiasClinicas;
+	private List<Cita> citasList = new ArrayList<Cita>();
+	private List<HistoriasClinicas> historiasClinicas = new ArrayList<HistoriasClinicas>();
 	
 	
 	public Paciente() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	//Primera instancia, creacion usuario sin cita
+
+	//Primera instancia del paciente
 	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
 			String contrasena) {
 		super();
@@ -37,11 +36,10 @@ public class Paciente extends Usuario{
 		this.email = email;
 		this.contrasena = contrasena;
 	}
-
 	
-	//Agregar una cita al paciente
+	//Agregar cita al paciente
 	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
-			String contrasena, ArrayList<Cita> citasList) {
+			String contrasena, List<Cita> citasList) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -54,9 +52,9 @@ public class Paciente extends Usuario{
 		this.citasList = citasList;
 	}
 	
-	//Agregar historias clinicas
+	//Agregar citas e historiaclinica
 	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
-			String contrasena, ArrayList<Cita> citasList, List<HistoriasClinicas> historiasClinicas) {
+			String contrasena, List<Cita> citasList, List<HistoriasClinicas> historiasClinicas) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -70,93 +68,75 @@ public class Paciente extends Usuario{
 		this.historiasClinicas = historiasClinicas;
 	}
 
-
 	public String getNombre() {
 		return nombre;
 	}
-
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-
 	public String getApellido() {
 		return apellido;
 	}
-
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
 
-
 	public int getEdad() {
 		return edad;
 	}
-
 
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
 
-
 	public String getSexo() {
 		return sexo;
 	}
-
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 
-
 	public String getTelefono() {
 		return telefono;
 	}
-
 
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
-
 	public String getCedula() {
 		return cedula;
 	}
-
 
 	public void setCedula(String cedula) {
 		this.cedula = cedula;
 	}
 
-
 	public String getEmail() {
 		return email;
 	}
-
 
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
-
 	public String getContrasena() {
 		return contrasena;
 	}
-
 
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
 	}
 
-
-	public ArrayList<Cita> getCitasList() {
+	public List<Cita> getCitasList() {
 		return citasList;
 	}
 
-
-	public void setCitasList(ArrayList<Cita> citasList) {
+	public void setCitasList(List<Cita> citasList) {
 		this.citasList = citasList;
 	}
 
@@ -164,11 +144,9 @@ public class Paciente extends Usuario{
 		return historiasClinicas;
 	}
 
-
 	public void setHistoriasClinicas(List<HistoriasClinicas> historiasClinicas) {
 		this.historiasClinicas = historiasClinicas;
 	}
-
 
 	@Override
 	public String toString() {
@@ -176,5 +154,6 @@ public class Paciente extends Usuario{
 				+ ", telefono=" + telefono + ", cedula=" + cedula + ", email=" + email + ", contrasena=" + contrasena
 				+ ", citasList=" + citasList + ", historiasClinicas=" + historiasClinicas + "]";
 	}
-
+	
+	
 }

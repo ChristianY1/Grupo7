@@ -9,6 +9,7 @@ public class Cita {
 	private LocalDateTime horaAsignada;
 	private Calendar fechaAsignada;
 	private String estadoCita;
+	private Paciente paciente;
 	
 	
 	
@@ -16,17 +17,15 @@ public class Cita {
 		super();
 	}
 
-
-
-	public Cita(String idCita, LocalDateTime horaAsignada, Calendar fechaAsignada, String estadoCita) {
+	public Cita(String idCita, LocalDateTime horaAsignada, Calendar fechaAsignada, String estadoCita,
+			Paciente paciente) {
 		super();
 		this.idCita = idCita;
 		this.horaAsignada = horaAsignada;
 		this.fechaAsignada = fechaAsignada;
 		this.estadoCita = estadoCita;
+		this.paciente = paciente;
 	}
-
-
 
 	public String getIdCita() {
 		return idCita;
