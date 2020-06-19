@@ -10,26 +10,26 @@ public class ConsultaMedica {
 	private String datosExtras;
 	private Paciente historiaPaciente;
 	private String examenesRequeridos;
-	private Factura factura;
+	//private Factura factura;
 	private CertificadoMedico certificadoMedico;
 	
 	public ConsultaMedica() {
 		super();
 	}
 
-	public ConsultaMedica(String idConsulta, Date fechaConsulta, String motivoConsulta, String datosExtras,
-			Paciente historiaPaciente, String examenesRequeridos, Factura factura,
-			CertificadoMedico certificadoMedico) {
-		super();
-		this.idConsulta = idConsulta;
-		this.fechaConsulta = fechaConsulta;
-		this.motivoConsulta = motivoConsulta;
-		this.datosExtras = datosExtras;
-		this.historiaPaciente = historiaPaciente;
-		this.examenesRequeridos = examenesRequeridos;
-		this.factura = factura;
-		this.certificadoMedico = certificadoMedico;
-	}
+//	public ConsultaMedica(String idConsulta, Date fechaConsulta, String motivoConsulta, String datosExtras,
+//			Paciente historiaPaciente, String examenesRequeridos, Factura factura,
+//			CertificadoMedico certificadoMedico) {
+//		super();
+//		this.idConsulta = idConsulta;
+//		this.fechaConsulta = fechaConsulta;
+//		this.motivoConsulta = motivoConsulta;
+//		this.datosExtras = datosExtras;
+//		this.historiaPaciente = historiaPaciente;
+//		this.examenesRequeridos = examenesRequeridos;
+//		//this.factura = factura;
+//		this.certificadoMedico = certificadoMedico;
+//	}
 
 	public String getIdConsulta() {
 		return idConsulta;
@@ -79,13 +79,13 @@ public class ConsultaMedica {
 		this.examenesRequeridos = examenesRequeridos;
 	}
 
-	public Factura getFactura() {
-		return factura;
-	}
-
-	public void setFactura(Factura factura) {
-		this.factura = factura;
-	}
+//	public Factura getFactura() {
+//		return factura;
+//	}
+//
+//	public void setFactura(Factura factura) {
+//		this.factura = factura;
+//	}
 
 	public CertificadoMedico getCertificadoMedico() {
 		return certificadoMedico;
