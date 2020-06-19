@@ -12,4 +12,12 @@ public class ControladorCitas {
 		return true;
 	}
 	
+	public void seleccionarMedico() {
+		
+	}
+	
+	public void enviarMensajeConfirmacion() {
+		
+	}
+	
 }

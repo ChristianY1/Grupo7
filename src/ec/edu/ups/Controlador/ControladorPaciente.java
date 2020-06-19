@@ -4,6 +4,7 @@ package ec.edu.ups.Controlador;
 import java.util.List;
 
 import ec.edu.ups.Modelo.Cita;
+import ec.edu.ups.Modelo.Medico;
 import ec.edu.ups.Modelo.Paciente;
 
 public class ControladorPaciente {
@@ -15,6 +16,11 @@ public class ControladorPaciente {
 	int tercerDigito = 0;
 	int suma = 0;
 	int digito = 0;
+	
+	public List verMedicos() {
+		List medicos=null;
+		return medicos;
+	}
 
 	public boolean validarCedula(String cedula) {
 		boolean validacion = false;
@@ -63,6 +69,10 @@ public class ControladorPaciente {
 	public List obtenerHistorialMedico(String cedula) {
 		List historialMedicoList=paciente.getHistoriasClinicas();
 		return historialMedicoList;
+	}
+	
+	public boolean agendarCita() {
+		return true;
 	}
 	
 }
