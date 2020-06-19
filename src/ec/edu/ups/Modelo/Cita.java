@@ -72,8 +72,15 @@ public class Cita {
 	public void setEstadoCita(String estadoCita) {
 		this.estadoCita = estadoCita;
 	}
+	
+	
+	public Paciente getPaciente() {
+		return paciente;
+	}
 
-
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
 
 	@Override
 	public String toString() {

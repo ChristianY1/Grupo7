@@ -28,5 +28,32 @@ public class ControladorCitaTest {
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 	
+	@Test
+	void testSeleccionarMedico() {
+		boolean resultadoEsperado = true;
+		boolean resultadoObtenido = controladorCitas.seleccionarMedico();
+		assertEquals(resultadoEsperado, resultadoObtenido);
+	}
+	
+	@Test
+	void testEnviarMensajeConfirmacion() {
+		boolean resultadoEsperado = true;
+		boolean resultadoObtenido = controladorCitas.enviarMensajeConfirmacion();
+		assertEquals(resultadoEsperado, resultadoObtenido);
+	}
+	
+	@Test
+	void testNotificarMedico() {
+		boolean resultadoEsperado = true;
+		boolean resultadoObtenido = controladorCitas.notificarMedico();
+		assertEquals(resultadoEsperado, resultadoObtenido);
+	}
+	
+	@Test
+	void testConsultarAgendaMedico() {
+		boolean resultadoEsperado = true;
+		boolean resultadoObtenido = controladorCitas.consultarAgendaMedico();
+		assertEquals(resultadoEsperado, resultadoObtenido);
+	}
 
 }

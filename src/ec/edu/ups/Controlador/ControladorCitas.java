@@ -12,12 +12,22 @@ public class ControladorCitas {
 		return true;
 	}
 	
-	public void seleccionarMedico() {
-		
+	public boolean seleccionarMedico() {
+		return true;
 	}
 	
-	public void enviarMensajeConfirmacion() {
-		
+	public boolean enviarMensajeConfirmacion() {
+		return true;
 	}
+	
+	public boolean notificarMedico() {
+		return true;
+	}
+	
+	public boolean consultarAgendaMedico() {
+		return true;
+	}
+	
+	
 	
 }
