@@ -66,9 +66,8 @@ public class ControladorPaciente {
 		return citasList;
 	}	
 	
-	public List obtenerHistorialMedico(String cedula) {
-		List historialMedicoList=paciente.getHistoriasClinicas();
-		return historialMedicoList;
+	public List<?> obtenerHistorialMedico(String cedula) {
+		return (List) paciente.getHistoriasClinicas();
 	}
 	
 	public boolean agendarCita() {

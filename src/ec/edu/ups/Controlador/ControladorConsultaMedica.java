@@ -1,37 +1,33 @@
 package ec.edu.ups.Controlador;
 
-import ec.edu.ups.Modelo.ConsultaMedica;
+//import ec.edu.ups.Modelo.ConsultaMedica;
 
 public class ControladorConsultaMedica {
 	
-	private ConsultaMedica consultaMedica;
+	//private ConsultaMedica consultaMedica;
 	
-	/*public boolean estadoCita(EstadoCita estadoCita) {
-		
-	}*/
-	
-	public void notificarMedico() {
-		
+	public boolean notificarMedico() {
+		return true;
 	}
 	
-	public void notificarPaciente() {
-		
+	public boolean notificarPaciente() {
+		return true;
 	}
 	
-	public void solicitarDatosExtas() {
-		
+	public boolean solicitarDatosExtas() {
+		return true;
 	}
 	
-	public void registrarAusenciaPaciente() {
-		
+	public boolean registrarAusenciaPaciente() {
+		return true;
 	}
 	
-	public void generarFactura() {
-		
+	public boolean generarFactura() {
+		return true;
 	}
 	
-	public void agendarRevision() {
-		
+	public boolean agendarRevision() {
+		return true;
 	}
 
 }
