@@ -1,26 +1,23 @@
 package ec.edu.ups.Controlador;
 
-
 import java.util.List;
 
 import ec.edu.ups.Modelo.Cita;
-import ec.edu.ups.Modelo.Medico;
+import ec.edu.ups.Modelo.HistoriasClinicas;
 import ec.edu.ups.Modelo.Paciente;
 
 public class ControladorPaciente {
 
 	private Paciente paciente;
-
+	/*
 	int[] coeficienteValidacionCedula = { 2, 1, 2, 1, 2, 1, 2, 1, 2 };
 	int verificador = 0;
 	int tercerDigito = 0;
 	int suma = 0;
 	int digito = 0;
-	
-	
+	*/
 	public boolean validarCedula(String cedula) {
-		boolean validacion = false;
-		try {
+		/*boolean validacion = false;
 			if (cedula.length() == 10) {
 				tercerDigito = Integer.parseInt(cedula.substring(2, 3));
 				if (tercerDigito < 6) {
@@ -38,36 +35,42 @@ public class ControladorPaciente {
 					} else {
 						validacion = false;
 					}
-				} else {
-					validacion = false;
 				}
-			} else {
-				validacion = false;
-			}
-		} catch (NumberFormatException nfe) {
-			validacion = false;
-		} catch (Exception err) {
-			System.out.println("Una excepcion ocurrio en el proceso de validadcion");
-			validacion = false;
-		}
+			}*/
+		return false;
+	}
 
-		if (!validacion) {
-			System.out.println("La Cédula ingresada es Incorrecta");
-		}
-		return validacion;
+	/*public List<Cita> obtenerCitas(String cedula) {
+		return paciente.getCitasList();
+	}*/
+	
+	public boolean obtenerCitas(String cedula) {
+		return false;
 	}
+
+	/*public List<HistoriasClinicas> obtenerHistorialMedico(String cedula) {
+		return paciente.getHistoriasClinicas();
+	}*/
 	
-	public List obtenerCitas(String cedula) {
-		List citasList=paciente.getCitasList();
-		return citasList;
-	}	
-	
-	public List<?> obtenerHistorialMedico(String cedula) {
-		return (List) paciente.getHistoriasClinicas();
+	public boolean obtenerHistorialMedico(String cedula) {
+		return false;
 	}
-	
+
 	public boolean agendarCita() {
 		return true;
 	}
 	
+	public boolean agregarPaciente(String nombre, String apellido, 
+			int edad, String sexo, String telefono, String cedula, String email, String contrasena) {
+		
+		paciente = new Paciente(nombre, apellido, edad, sexo, telefono, cedula, email, contrasena);
+		paciente.getApellido();
+		paciente.getCedula();
+		paciente.getEdad();
+		paciente.getNombre();
+		paciente.getTelefono();
+		
+		return false;
+	}
+
 }

@@ -16,7 +16,7 @@ public class Cita {
 	public Cita() {
 		super();
 	}
-
+	/*
 	public Cita(String idCita, LocalDateTime horaAsignada, Calendar fechaAsignada, String estadoCita,
 			Paciente paciente) {
 		super();
@@ -26,7 +26,7 @@ public class Cita {
 		this.estadoCita = estadoCita;
 		this.paciente = paciente;
 	}
-
+	*/
 	public String getIdCita() {
 		return idCita;
 	}

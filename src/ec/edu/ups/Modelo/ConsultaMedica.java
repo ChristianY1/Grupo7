@@ -28,7 +28,7 @@ public class ConsultaMedica {
 //		//this.factura = factura;
 //		this.certificadoMedico = certificadoMedico;
 //	}
-
+/*
 	public String getIdConsulta() {
 		return idConsulta;
 	}
@@ -76,7 +76,7 @@ public class ConsultaMedica {
 	public void setExamenesRequeridos(String examenesRequeridos) {
 		this.examenesRequeridos = examenesRequeridos;
 	}
-
+*/
 //	public Factura getFactura() {
 //		return factura;
 //	}
@@ -84,18 +84,4 @@ public class ConsultaMedica {
 //	public void setFactura(Factura factura) {
 //		this.factura = factura;
 //	}
-
-	
-
-	@Override
-	public String toString() {
-		return "ConsultaMedica [idConsulta=" + idConsulta + ", fechaConsulta=" + fechaConsulta + ", motivoConsulta="
-				+ motivoConsulta + ", datosExtras=" + datosExtras + ", historiaPaciente=" + historiaPaciente
-				+ ", examenesRequeridos=" + examenesRequeridos + "]";
-	}
-	
-	
-	
-	
-	
 }

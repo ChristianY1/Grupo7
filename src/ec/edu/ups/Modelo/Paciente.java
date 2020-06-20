@@ -18,12 +18,12 @@ public class Paciente extends Usuario{
 	private List<HistoriasClinicas> historiasClinicas = new ArrayList<HistoriasClinicas>();
 	
 	
+	
+
 	public Paciente() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
-	//Primera instancia del paciente
 	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
 			String contrasena) {
 		super();
@@ -35,11 +35,13 @@ public class Paciente extends Usuario{
 		this.cedula = cedula;
 		this.email = email;
 		this.contrasena = contrasena;
+
 	}
-	
-	//Agregar cita al paciente
+
+	//Primera instancia del paciente
+	/*
 	public Paciente(String nombre, String apellido, int edad, String sexo, String telefono, String cedula, String email,
-			String contrasena, List<Cita> citasList) {
+			String contrasena) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -49,7 +51,6 @@ public class Paciente extends Usuario{
 		this.cedula = cedula;
 		this.email = email;
 		this.contrasena = contrasena;
-		this.citasList = citasList;
 	}
 	
 	//Agregar citas e historiaclinica
@@ -67,6 +68,7 @@ public class Paciente extends Usuario{
 		this.citasList = citasList;
 		this.historiasClinicas = historiasClinicas;
 	}
+	*/
 
 	public String getNombre() {
 		return nombre;
@@ -91,22 +93,22 @@ public class Paciente extends Usuario{
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-
+	/*
 	public String getSexo() {
 		return sexo;
 	}
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
-	}
+	}*/
 
 	public String getTelefono() {
 		return telefono;
 	}
-
+	/*
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
-	}
+	}*/
 
 	public String getCedula() {
 		return cedula;
@@ -115,7 +117,7 @@ public class Paciente extends Usuario{
 	public void setCedula(String cedula) {
 		this.cedula = cedula;
 	}
-
+	/*
 	public String getEmail() {
 		return email;
 	}
@@ -147,13 +149,6 @@ public class Paciente extends Usuario{
 	public void setHistoriasClinicas(List<HistoriasClinicas> historiasClinicas) {
 		this.historiasClinicas = historiasClinicas;
 	}
-
-	@Override
-	public String toString() {
-		return "Paciente [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sexo=" + sexo
-				+ ", telefono=" + telefono + ", cedula=" + cedula + ", email=" + email + ", contrasena=" + contrasena
-				+ ", citasList=" + citasList + ", historiasClinicas=" + historiasClinicas + "]";
-	}
-	
+	*/
 	
 }
