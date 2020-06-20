@@ -13,40 +13,23 @@ public class LibroDiario {
 		super();
 	}
 	
-	public LibroDiario(int libroD_id, String debe, String haber, String fecha) {
-		this.libroD_id = libroD_id;
-		this.debe = debe;
-		this.haber = haber;
-		this.fecha = fecha;
-	}
-
-	public int getLibroD_id() {
-		return libroD_id;
-	}
+	
 
 	public void setLibroD_id(int libroD_id) {
 		this.libroD_id = libroD_id;
 	}
 
-	public String getDebe() {
-		return debe;
-	}
-
+	
 	public void setDebe(String debe) {
 		this.debe = debe;
 	}
 
-	public String getHaber() {
-		return haber;
-	}
+	
 
 	public void setHaber(String haber) {
 		this.haber = haber;
 	}
 
-	public String getFecha() {
-		return fecha;
-	}
 
 	public void setFecha(String fecha) {
 		this.fecha = fecha;
