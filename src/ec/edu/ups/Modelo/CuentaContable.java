@@ -17,7 +17,7 @@ public class CuentaContable {
 		super();
 	}
 	
-	
+	/*
 	public CuentaContable(int id, String nombre, Date fecha, String descripcion, String debe, String haber,
 			double saldo) {
 		super();
@@ -71,7 +71,7 @@ public class CuentaContable {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	
+	*/
 	
 	
 }

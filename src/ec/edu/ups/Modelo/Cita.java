@@ -26,10 +26,10 @@ public class Cita {
 		this.estadoCita = estadoCita;
 		this.paciente = paciente;
 	}
-	*/
+	
 	public String getIdCita() {
 		return idCita;
-	}
+	}*/
 
 
 
@@ -38,7 +38,7 @@ public class Cita {
 	}
 
 
-
+	/*
 	public LocalDateTime getHoraAsignada() {
 		return horaAsignada;
 	}
@@ -68,26 +68,21 @@ public class Cita {
 	}
 
 
-
+	*/
 	public void setEstadoCita(String estadoCita) {
 		this.estadoCita = estadoCita;
 	}
 	
 	
+	/*
 	public Paciente getPaciente() {
 		return paciente;
 	}
 
 	public void setPaciente(Paciente paciente) {
 		this.paciente = paciente;
-	}
+	}*/
 
-	@Override
-	public String toString() {
-		return "Cita [idCita=" + idCita + ", horaAsignada=" + horaAsignada + ", fechaAsignada=" + fechaAsignada
-				+ ", estadoCita=" + estadoCita + "]";
-	}
-	
 	
 	
 	
