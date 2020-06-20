@@ -1,16 +1,13 @@
 package ec.edu.ups.Controlador;
 
-import java.util.List;
 
 import ec.edu.ups.Modelo.Factura;
-import ec.edu.ups.Modelo.FacturaDetalle;
 import ec.edu.ups.Modelo.Medicina;
 
 
 public class ControladorFactutaDetalle {
 	
 	Factura factura;
-	FacturaDetalle facturaDetalle;
 	
 	
 	public boolean calcularTotalPagarEnMedicina(Medicina medicina, double precio) {

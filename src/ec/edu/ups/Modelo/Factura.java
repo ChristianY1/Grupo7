@@ -10,7 +10,7 @@ public class Factura {
 	private String fechaFactura;
 	private Paciente paciente;
 	private Medico medico;
-	private ArrayList<FacturaDetalle> facturaDetalle;
+	//private ArrayList<FacturaDetalle> facturaDetalle;
 	
 	
 	public Factura() {
@@ -65,25 +65,5 @@ public class Factura {
 		this.medico = medico;
 	}
 
-
-	public ArrayList<FacturaDetalle> getFacturaDetalle() {
-		return facturaDetalle;
-	}
-
-
-	public void setFacturaDetalle(ArrayList<FacturaDetalle> facturaDetalle) {
-		this.facturaDetalle = facturaDetalle;
-	}
-
-
-	@Override
-	public String toString() {
-		return "Factura [idFactura=" + idFactura + ", fechaFactura=" + fechaFactura + ", paciente=" + paciente
-				+ ", medico=" + medico + "]";
-	}
-	
-	
-	
-	
 
 }
