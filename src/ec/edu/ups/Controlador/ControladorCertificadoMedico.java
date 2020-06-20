@@ -20,9 +20,7 @@ public class ControladorCertificadoMedico {
 		return true;
 	}
 	
-	public boolean RegistrarCertificadoPaciente(String certificados) {
-		return true;
-	}
+	
 	
 	public boolean RegistrarCertificadoMedico(String listReporte) {
 		return true;

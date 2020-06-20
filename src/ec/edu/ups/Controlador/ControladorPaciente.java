@@ -44,9 +44,7 @@ public class ControladorPaciente {
 		return paciente.getCitasList();
 	}*/
 	
-	public boolean obtenerCitas(String cedula) {
-		return false;
-	}
+	
 
 	/*public List<HistoriasClinicas> obtenerHistorialMedico(String cedula) {
 		return paciente.getHistoriasClinicas();

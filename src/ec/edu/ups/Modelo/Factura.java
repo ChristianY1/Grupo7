@@ -26,19 +26,14 @@ public class Factura {
 	}
 
 
-	public String getIdFactura() {
-		return idFactura;
-	}
-
+	
 
 	public void setIdFactura(String idFactura) {
 		this.idFactura = idFactura;
 	}
 
 
-	public String getFechaFactura() {
-		return fechaFactura;
-	}
+	
 
 
 	public void setFechaFactura(String fechaFactura) {
@@ -46,41 +41,7 @@ public class Factura {
 	}
 
 
-	public Paciente getPaciente() {
-		return paciente;
-	}
-
-
-	public void setPaciente(Paciente paciente) {
-		this.paciente = paciente;
-	}
-
-
-	public Medico getMedico() {
-		return medico;
-	}
-
-
-	public void setMedico(Medico medico) {
-		this.medico = medico;
-	}
-
-
-	public ArrayList<FacturaDetalle> getFacturaDetalle() {
-		return facturaDetalle;
-	}
-
-
-	public void setFacturaDetalle(ArrayList<FacturaDetalle> facturaDetalle) {
-		this.facturaDetalle = facturaDetalle;
-	}
-
-
-	@Override
-	public String toString() {
-		return "Factura [idFactura=" + idFactura + ", fechaFactura=" + fechaFactura + ", paciente=" + paciente
-				+ ", medico=" + medico + "]";
-	}
+	
 	
 	
 	
