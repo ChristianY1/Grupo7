@@ -23,9 +23,7 @@ public class ControladorCaja {
 		return 0;
 	}
 	
-	public double haber(double deudas) {
-		return 0;
-	}
+	
 	
 	public boolean guardarTransaccion() {
 		return false;

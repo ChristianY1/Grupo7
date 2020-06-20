@@ -26,44 +26,20 @@ public class Factura {
 	}
 
 
-	public String getIdFactura() {
-		return idFactura;
-	}
-
+	
 
 	public void setIdFactura(String idFactura) {
 		this.idFactura = idFactura;
 	}
 
 
-	public String getFechaFactura() {
-		return fechaFactura;
-	}
+	
 
 
 	public void setFechaFactura(String fechaFactura) {
 		this.fechaFactura = fechaFactura;
 	}
 
-
-	public Paciente getPaciente() {
-		return paciente;
-	}
-
-
-	public void setPaciente(Paciente paciente) {
-		this.paciente = paciente;
-	}
-
-
-	public Medico getMedico() {
-		return medico;
-	}
-
-
-	public void setMedico(Medico medico) {
-		this.medico = medico;
-	}
 
 
 }
