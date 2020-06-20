@@ -10,7 +10,7 @@ public class Factura {
 	private String fechaFactura;
 	private Paciente paciente;
 	private Medico medico;
-	private ArrayList<FacturaDetalle> facturaDetalle;
+	//private ArrayList<FacturaDetalle> facturaDetalle;
 	
 	
 	public Factura() {
@@ -41,10 +41,5 @@ public class Factura {
 	}
 
 
-	
-	
-	
-	
-	
 
 }
