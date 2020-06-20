@@ -4,7 +4,7 @@ import ec.edu.ups.Modelo.Medico;
 
 public class ControladorMedico {
 
-	public double calcularSueldo(String especialidad) {
+	public double calcularSueldo(int idMedico, String especialidad) {
 		return 0;
 	}
 	

@@ -12,7 +12,7 @@ public class ControladorMedicina {
 		return true;
 	}
 	
-	public boolean CalcularTotalEnMedicinas(double totalPagarMedicina) {
+	public boolean CalcularTotalEnMedicinas(Medicina medicina, double totalPagarMedicina) {
 		return true;
 	}
 

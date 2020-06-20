@@ -23,24 +23,14 @@ public class ControladorReporteTest {
 	void setUp() throws Exception {
 		this.listareporte = new ArrayList<Reporte>();
 		this.libroDiario = libroDiario;
+		controladorReporte = new ControladorReporte();
 	}
 	
 	@AfterEach
 	void tearDown() throws Exception {
 	}
 	
-	@Test
-	void testCrearReporte(Reporte listareportes) {
-		//LibroDiario libroDiario = new LibroDiario();
-		Reporte reporte = new Reporte();
-		int report_id = 1;
-		String Datos = "Aqui los datos";
-		String Diario = "Aqui el diario";
-		double balances = 48.08;
-		String resultadoEsperado = "1, Aqui los datos, Aqui el diario, 48.08, libroDiario";
-		String resultadoObtenido = controladorReporte.crearReporte(report_id, Datos, Diario, balances, libroDiario);
-		assertEquals(resultadoEsperado, resultadoObtenido);	
-	}
+	
 	
 	@Test
 	void testBuscar() {

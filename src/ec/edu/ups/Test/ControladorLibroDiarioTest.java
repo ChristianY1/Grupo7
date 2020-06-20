@@ -16,10 +16,13 @@ public class ControladorLibroDiarioTest {
 
 	private List<LibroDiario> listLibroDiario;
 	private ControladorLibroDiario controladorLibroDiario;
+	private LibroDiario libroDiario;
 	
 	@BeforeEach
 	void setUp() throws Exception {
 		this.listLibroDiario = new ArrayList<LibroDiario>();
+		this.controladorLibroDiario = new ControladorLibroDiario();
+		this.libroDiario = new LibroDiario();
 	}
 	
 	@AfterEach
@@ -27,14 +30,14 @@ public class ControladorLibroDiarioTest {
 	}
 	
 	@Test
-	void testCrearLibroDiario(LibroDiario listLibroDiario) {
-		LibroDiario libroDiario = new LibroDiario();
-		int id = 1;
-		String debe = "Aqui debe tanto";
-		String haber = "Aqui haber tanto";
-		String fecha = "12/06/2020";
-		String resultadoEsperado = "1, Aqui debe tanto, Aqui haber tanto, 12/06/2020";
-		String resultadoObtenido = controladorLibroDiario.crearLibroDiario(id, debe, haber, fecha);
+	void testCrearLibroDiario() {
+		libroDiario.setLibroD_id(0);
+		libroDiario.setFecha("12/06/2020");
+		libroDiario.setHaber("445");
+		libroDiario.setDebe("7457");
+		
+		String resultadoEsperado = "0, 445, 7457, 12/06/2020";
+		String resultadoObtenido = controladorLibroDiario.crearLibroDiario(libroDiario).toString();
 		assertEquals(resultadoEsperado, resultadoObtenido);	
 	}
 	

@@ -23,8 +23,10 @@ class ControladorCajaTest {
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		
+		this.colaborador = new Colaboradores();
 		this.comprobante = new ArrayList<ComprobanteDeVenta>();
+		this.controladorCaja = new ControladorCaja();
+		
 	}
 	
 

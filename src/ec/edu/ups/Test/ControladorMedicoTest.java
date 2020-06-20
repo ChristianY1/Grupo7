@@ -13,6 +13,7 @@ class ControladorMedicoTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		controladorMedico = new ControladorMedico();
 	}
 
 	@AfterEach
@@ -22,7 +23,9 @@ class ControladorMedicoTest {
 	@Test
 	void testCalcularSueldo() {
 		double resultadoEsperado = 3947.98;
-		double resultadoObtenido = controladorMedico.calcularSueldo("Cardiologo");
+		String especialidad = "cardiologo";
+		int idMedico = 0;
+		double resultadoObtenido = controladorMedico.calcularSueldo(idMedico, especialidad);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 

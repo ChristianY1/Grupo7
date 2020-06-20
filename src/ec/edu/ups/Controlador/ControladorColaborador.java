@@ -4,7 +4,7 @@ import ec.edu.ups.Modelo.Colaboradores;
 
 public class ControladorColaborador {
 		
-	public double CalcularSueldo(String cargo) {
+	public double CalcularSueldo(String cargo, int id) {
 		return 0;
 	}
 	

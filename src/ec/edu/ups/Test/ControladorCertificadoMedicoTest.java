@@ -6,15 +6,19 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import ec.edu.ups.Controlador.ControladorCertificadoMedico;
+import ec.edu.ups.Modelo.Paciente;
 
 
 
 public class ControladorCertificadoMedicoTest {
 	
 	private ControladorCertificadoMedico controladorCertificadoMedico;
+	private Paciente paciente;
 	
 	@BeforeEach
 	void setUp() throws Exception {
+		paciente = new Paciente();
+		controladorCertificadoMedico = new ControladorCertificadoMedico();
 	}
 
 	@AfterEach
@@ -22,30 +26,37 @@ public class ControladorCertificadoMedicoTest {
 	}
 	
 	@Test
-	void testSolicitarInformacionEnvio() {
-		boolean resultadoEsperado = true;
-		boolean resultadoObtenido = controladorCertificadoMedico.SolicitarConfirmacionEnvio("NegarConfirmacion");
+	void testSolicitarConfirmacionEnvio() {
+		boolean resultadoEsperado = false;
+		String estado = "NegarConfirmacion";
+		paciente.setCedula("0106683474");
+		paciente.setNombre("Andrea");
+		paciente.setApellido("Lopez");
+		boolean resultadoObtenido = controladorCertificadoMedico.SolicitarConfirmacionEnvio(paciente, estado);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 	
 	@Test
 	void testEnviarCertificadoEmail() {
-		boolean resultadoEsperado = true;
-		boolean resultadoObtenido = controladorCertificadoMedico.EnviarCertificadoEmail("prosebascalle@hotmail.com");
+		boolean resultadoEsperado = false;
+		String correoElectronico = "prosebascalle@hotmail.com";
+		boolean resultadoObtenido = controladorCertificadoMedico.EnviarCertificadoEmail(correoElectronico);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 	
 	@Test
 	void testRegistrarCertificadoPaciente() {
-		boolean resultadoEsperado = true;
-		boolean resultadoObtenido = controladorCertificadoMedico.RegistrarCertificadoMedico("CertificadoParaPaciente");
+		boolean resultadoEsperado = false;
+		String certificado = "CertificadoParaPaciente";
+		boolean resultadoObtenido = controladorCertificadoMedico.RegistrarCertificadoMedico(certificado);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 	
 	@Test
 	void testRegistrarCertificadoMedico() {
-		boolean resultadoEsperado = true;
-		boolean resultadoObtenido = controladorCertificadoMedico.RegistrarCertificadoMedico("CertificadoParaPaciente");
+		boolean resultadoEsperado = false;
+		String certificado = "CertificadoParaPaciente";
+		boolean resultadoObtenido = controladorCertificadoMedico.RegistrarCertificadoMedico(certificado);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 	

@@ -16,6 +16,7 @@ class ControladorComprobanteDeVentaTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		this.comprobanteDeVenta = new ComprobanteDeVenta("factura", "20/12/2020", 1);
+		controladorcv = new ControladorComprobanteDeVenta();
 	}
 
 	@AfterEach

@@ -13,6 +13,7 @@ public class ControladorPacienteTest {
 	private ControladorPaciente controladorPaciente;
 	@BeforeEach
 	void setUp() throws Exception {
+		controladorPaciente = new ControladorPaciente();
 	}
 
 	@AfterEach
@@ -21,8 +22,9 @@ public class ControladorPacienteTest {
 	
 	@Test
 	void testValidarCedula() {
-		boolean resultadoEsperado = true;
-		boolean resultadoObtenido = controladorPaciente.validarCedula("1400919302");
+		boolean resultadoEsperado = false;
+		String cedula = "1400919302";
+		boolean resultadoObtenido = controladorPaciente.validarCedula(cedula);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 	}
 

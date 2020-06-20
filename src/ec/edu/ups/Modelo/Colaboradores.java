@@ -20,25 +20,6 @@ public class Colaboradores extends Sueldo {
 
 
 
-	public int getCargasFamiliares() {
-		return cargasFamiliares;
-	}
-
-
-
-	public void setCargasFamiliares(int cargasFamiliares) {
-		this.cargasFamiliares = cargasFamiliares;
-	}
-
-
-
-	public String getCargo() {
-		return cargo;
-	}
-
-	public void setCargo(String cargo) {
-		this.cargo = cargo;
-	}
 	
 	
 }

@@ -13,6 +13,7 @@ class ControladorSueldoTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		controladorSueldo = new ControladorSueldo();
 	}
 
 	@AfterEach

@@ -22,6 +22,7 @@ class ControladorInformacionTest {
 	void setUp() throws Exception {
 		this.medicos = new ArrayList<Medico>();
 		this.colaboradores = new ArrayList<Colaboradores>();
+		controladorInformacion = new ControladorInformacion();
 	}
 
 	@AfterEach

@@ -7,7 +7,7 @@ public class Factura {
 	
 	
 	private String idFactura;
-	private Date fechaFactura;
+	private String fechaFactura;
 	private Paciente paciente;
 	private Medico medico;
 	private ArrayList<FacturaDetalle> facturaDetalle;
@@ -15,6 +15,14 @@ public class Factura {
 	
 	public Factura() {
 		super();
+	}
+
+	
+	public Factura(String idFactura, String fechaFactura) {
+		super();
+		this.idFactura = idFactura;
+		this.fechaFactura = fechaFactura;
+		
 	}
 
 
@@ -28,12 +36,12 @@ public class Factura {
 	}
 
 
-	public Date getFechaFactura() {
+	public String getFechaFactura() {
 		return fechaFactura;
 	}
 
 
-	public void setFechaFactura(Date fechaFactura) {
+	public void setFechaFactura(String fechaFactura) {
 		this.fechaFactura = fechaFactura;
 	}
 

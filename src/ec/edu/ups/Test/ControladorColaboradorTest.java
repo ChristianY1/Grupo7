@@ -15,6 +15,7 @@ class ControladorColaboradorTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		controladorColaborador = new ControladorColaborador();
 		
 	}
 
@@ -25,8 +26,9 @@ class ControladorColaboradorTest {
 	@Test
 	void testCalcularSueldo() {
 		String cargo  = "contador";
+		int id = 0;
 		double resultadoEsperado = 837.98;
-		double resultadoObtenido = controladorColaborador.CalcularSueldo(cargo);
+		double resultadoObtenido = controladorColaborador.CalcularSueldo(cargo, id);
 		assertEquals(resultadoEsperado, resultadoObtenido);
 		
 	}

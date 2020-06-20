@@ -2,17 +2,17 @@ package ec.edu.ups.Controlador;
 
 import java.util.ArrayList;
 
-import ec.edu.ups.Modelo.CertificadoMedico;
+
 import ec.edu.ups.Modelo.Medico;
 import ec.edu.ups.Modelo.Paciente;
 
 public class ControladorCertificadoMedico {
 	
-	CertificadoMedico certificadoMedico;
+	
 	Paciente paciente;
 	Medico medico;
 	
-	public boolean SolicitarConfirmacionEnvio(String paciente) {
+	public boolean SolicitarConfirmacionEnvio(Paciente paciente,String estado) {
 		return true;
 	}
 	

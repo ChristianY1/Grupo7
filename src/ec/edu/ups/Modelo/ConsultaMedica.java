@@ -10,12 +10,10 @@ public class ConsultaMedica {
 	private String datosExtras;
 	private Paciente historiaPaciente;
 	private String examenesRequeridos;
-	//private Factura factura;
-	private CertificadoMedico certificadoMedico;
+	private Factura factura;
 	
-	public ConsultaMedica() {
-		super();
-	}
+	
+	
 
 //	public ConsultaMedica(String idConsulta, Date fechaConsulta, String motivoConsulta, String datosExtras,
 //			Paciente historiaPaciente, String examenesRequeridos, Factura factura,
@@ -87,13 +85,7 @@ public class ConsultaMedica {
 //		this.factura = factura;
 //	}
 
-	public CertificadoMedico getCertificadoMedico() {
-		return certificadoMedico;
-	}
-
-	public void setCertificadoMedico(CertificadoMedico certificadoMedico) {
-		this.certificadoMedico = certificadoMedico;
-	}
+	
 
 	@Override
 	public String toString() {

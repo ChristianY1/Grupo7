@@ -21,6 +21,10 @@ class ControladorDiarioTest {
 	private ControladorDiario controladorDiario;
 	@BeforeEach
 	void setUp() throws Exception {
+		caja = new ArrayList<Caja>();
+		comprobanteDeVenta = new ArrayList<ComprobanteDeVenta>();
+		sueldo = new ArrayList<Sueldo>();
+		controladorDiario = new ControladorDiario();
 		this.caja = new ArrayList<Caja>();
 	}
 

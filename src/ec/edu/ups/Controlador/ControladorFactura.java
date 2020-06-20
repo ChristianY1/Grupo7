@@ -6,11 +6,11 @@ public class ControladorFactura {
 	
 	Factura factura;
 	
-	public boolean enviarFacturaEmail(String email) {
+	public boolean enviarFacturaEmail(Factura factura) {
 		return true;
 	}
 	
-	public boolean registrarPaciente(String cedulaPaciente) {
+	public boolean registrarPaciente(String cedulaPaciente, String correo, String contrasena) {
 		return true;
 	}
 	

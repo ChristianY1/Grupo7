@@ -7,9 +7,9 @@ import ec.edu.ups.Modelo.LibroDiario;
 public class ControladorLibroDiario {
 
 	private LibroDiario libroDiario;
-	
-	public String crearLibroDiario(int id, String debe, String haber, String fecha){
-		return null;
+	//int id, String debe, String haber, String fecha
+	public String crearLibroDiario(LibroDiario libro){
+		return " ";
 	}
 
 	public List<LibroDiario> cargarLibroDiario(LibroDiario listLibroDiario){

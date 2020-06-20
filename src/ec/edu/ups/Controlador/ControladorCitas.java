@@ -1,6 +1,9 @@
 package ec.edu.ups.Controlador;
 
+import org.junit.jupiter.params.aggregator.AggregateWith;
+
 import ec.edu.ups.Modelo.Cita;
+import ec.edu.ups.Modelo.Medico;
 
 public class ControladorCitas {
 	
@@ -8,7 +11,6 @@ public class ControladorCitas {
 	
 	
 	public boolean verificarEstadoCita(String idCita) {
-		cita.getEstadoCita();
 		return true;
 	}
 	
@@ -20,11 +22,11 @@ public class ControladorCitas {
 		return true;
 	}
 	
-	public boolean notificarMedico() {
+	public boolean notificarMedico(Medico medico) {
 		return true;
 	}
 	
-	public boolean consultarAgendaMedico() {
+	public boolean consultarAgendaMedico(Medico medico, Cita cita) {
 		return true;
 	}
 	

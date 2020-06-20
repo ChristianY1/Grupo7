@@ -19,6 +19,7 @@ public class ControladorListComporbantesTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		this.listaComrpobanteDeVenta = new ArrayList<ComprobanteDeVenta>();
+		controladorListaComprobantes = new ControloadorListaComprobantes();
 	}
 	
 	@AfterEach

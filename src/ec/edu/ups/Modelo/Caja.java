@@ -8,9 +8,7 @@ public class Caja extends CuentaContable{
 	private double saldo;
 	
 	
-	public Caja() {
-		super();
-	}
+	
 
 	public Caja(List<ComprobanteDeVenta> listcv, List<Sueldo> listSueldo, double saldo) {
 		super();
@@ -19,24 +17,7 @@ public class Caja extends CuentaContable{
 		this.saldo = saldo;
 	}
 	
-	public List<ComprobanteDeVenta> getListcv() {
-		return listcv;
-	}
-	public void setListcv(List<ComprobanteDeVenta> listcv) {
-		this.listcv = listcv;
-	}
-	public List<Sueldo> getListSueldo() {
-		return listSueldo;
-	}
-	public void setListSueldo(List<Sueldo> listSueldo) {
-		this.listSueldo = listSueldo;
-	}
-	public double getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
+	
 	
 	
 	

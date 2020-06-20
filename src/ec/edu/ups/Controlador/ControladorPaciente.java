@@ -17,11 +17,7 @@ public class ControladorPaciente {
 	int suma = 0;
 	int digito = 0;
 	
-	public List verMedicos() {
-		List medicos=null;
-		return medicos;
-	}
-
+	
 	public boolean validarCedula(String cedula) {
 		boolean validacion = false;
 		try {

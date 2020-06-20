@@ -14,7 +14,6 @@ public class LibroDiario {
 	}
 	
 	public LibroDiario(int libroD_id, String debe, String haber, String fecha) {
-		super();
 		this.libroD_id = libroD_id;
 		this.debe = debe;
 		this.haber = haber;

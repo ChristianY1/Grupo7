@@ -1,5 +1,8 @@
 package ec.edu.ups.Controlador;
 
+import ec.edu.ups.Modelo.Factura;
+import ec.edu.ups.Modelo.Paciente;
+
 //import ec.edu.ups.Modelo.ConsultaMedica;
 
 public class ControladorConsultaMedica {
@@ -10,11 +13,11 @@ public class ControladorConsultaMedica {
 		return true;
 	}
 	
-	public boolean notificarPaciente() {
-		return true;
+	public boolean notificarPaciente(Paciente paciente) {
+		return false;
 	}
 	
-	public boolean solicitarDatosExtas() {
+	public boolean solicitarDatosExtas(String descripcion) {
 		return true;
 	}
 	
@@ -22,7 +25,7 @@ public class ControladorConsultaMedica {
 		return true;
 	}
 	
-	public boolean generarFactura() {
+	public boolean generarFactura(Factura factura, Paciente paciente) {
 		return true;
 	}
 	
